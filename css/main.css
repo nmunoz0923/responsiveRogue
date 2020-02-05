@@ -16,9 +16,9 @@ body {
 }
 
 .container{
+	width:90%;
 	flex-wrap: wrap;
-	max-width: 75em;
-	margin: 0 auto;
+	max-width: 1200px;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display:flex;
 	justify-content: center;
@@ -48,13 +48,12 @@ h4 {
 
 p {
 	font-size: .875em;
-	line-height: 21px;
     padding: 0 30px;
 }
 
 /*The widths are in a percentage!*/
 header {
-	height: 110px;
+	flex-wrap:wrap;
 	border-bottom: 3px solid #77a466;
 	margin: 0 auto;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -64,16 +63,17 @@ header {
 }
 
 header h1 {
-	/*float: left;*/
+	width:100%;
 	margin: 0;
 	padding: 38px 0;
 }
 header h1 span {
 	color: #77a466;
+	padding:20px
 }
 
 header nav {
-	/*float: right;*/
+	width:100%;
 	padding: 46px 0;
 }
 header nav ul {
@@ -90,6 +90,7 @@ header nav ul li {
 header nav ul li a{
 	text-decoration: none;
 	color:#77a466;
+	padding:60px;
 }
 
 /*The widths are in a percentage!*/
@@ -97,15 +98,11 @@ header nav ul li a{
 	flex-wrap: wrap;
 }
 
-.bottom-section {
-	align-items: stretch;
-}
-
 .top-section,
 .bottom-section {
+	flex-wrap:wrap;
 	flex-direction: row;
 	margin: 0 auto;
-	clear: both;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display:flex;
 	justify-content: center;
@@ -113,7 +110,6 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
-	/*float: left;*/
 }
 .main-image img {
 	width: 100%;
@@ -132,25 +128,28 @@ header nav ul li a{
 .main-title p {
 	padding: 0;
 	font-size: 16px;
-	line-height: 25px;
 }
 
 .section-one,
 .section-two,
 .section-three {
-	flex-direction: row;
 	width: 33%;
 	height: auto;
-	/*float: left;*/
 	border-top: 1px solid #eee;
-	align-items: stretch;
 }
 
 .section-one h4 {
 	padding: 10px 0;
+	text-align: left;
+}
+
+.section-one ul li {
+	text-align: left;
 }
 
 .section-two {
+	flex-direction: column;
+	width:100%;
 	border-left: 1px solid #eee;
 	border-right: 1px solid #eee;
 }
@@ -182,10 +181,7 @@ header nav ul li a{
 
 /*The widths are in a percentage!*/
 footer {
-	height: 50px;
 	border-top: 3px solid #eee;
-	margin: 0 auto;
-	clear: both;
 	text-align: center;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 	display:flex;
@@ -199,6 +195,20 @@ footer span {
 	font-size: .875em;
 }
 
-/*@media{(min-width: 375px)}
+/*@media{(min-width: 375px)
 @media{(min-width: 768px)}
 @media{(min-width: 1200px)}*/
+
+@media (min-width:375px) {
+
+}
+
+
+@media (min-width:768px) {
+
+}
+
+
+@media (min-width:1200px){
+
+}
