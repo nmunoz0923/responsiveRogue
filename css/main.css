@@ -16,7 +16,7 @@ body {
 }
 
 .container{
-	flex-wrap:wrap;
+	flex-wrap: wrap;
 	max-width: 75em;
 	margin: 0 auto;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -64,7 +64,7 @@ header {
 }
 
 header h1 {
-	float: left;
+	/*float: left;*/
 	margin: 0;
 	padding: 38px 0;
 }
@@ -73,7 +73,7 @@ header h1 span {
 }
 
 header nav {
-	float: right;
+	/*float: right;*/
 	padding: 46px 0;
 }
 header nav ul {
@@ -103,6 +103,7 @@ header nav ul li a{
 
 .top-section,
 .bottom-section {
+	flex-direction: row;
 	margin: 0 auto;
 	clear: both;
 	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -112,7 +113,7 @@ header nav ul li a{
 
 .main-image {
 	height: auto;
-	float: left;
+	/*float: left;*/
 }
 .main-image img {
 	width: 100%;
@@ -137,9 +138,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
+	flex-direction: row;
 	width: 33%;
 	height: auto;
-	float: left;
+	/*float: left;*/
 	border-top: 1px solid #eee;
 	align-items: stretch;
 }
