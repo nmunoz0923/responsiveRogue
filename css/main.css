@@ -64,11 +64,11 @@ header {
 
 header h1 {
 	width:100%;
-	margin: 0;
-	/* padding:30px 25px 20px 70px; */
-	border-bottom: 3px solid #77a466;
+	margin: 10px 0px;
+	padding-bottom:10px;
 	text-align: center;
 	flex-flow: wrap;
+	border-bottom: 3px solid #77a466;
 }
 header h1 span {
 	color: #77a466;
@@ -192,6 +192,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 }
+
 footer span {
 	font-family: 'Wisdom Script', cursive;
 	text-transform: lowercase;
@@ -203,16 +204,28 @@ footer span {
 @media{(min-width: 768px)}
 @media{(min-width: 1200px)}*/
 
-@media (min-width:375px) {
-
-}
-
 
 @media (min-width:768px) {
-
+	.section-one,
+	.section-two,
+	.section-three {
+		display:flex;
+		flex-direction: column;
+		width:33.3%;
 }
 
 
 @media (min-width:1200px){
-
+	.section-one,
+	.section-two,
+	.section-three {
+		display:flex;
+		width:33%;
+		margin-top:0;
+	}
+}
+@media (min-width:1200px){
+	.section-three {
+		text-align: center;
+	}
 }
